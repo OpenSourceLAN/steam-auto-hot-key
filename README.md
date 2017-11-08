@@ -1,2 +1,2 @@
 # steam-auto-hot-key
-Auto Hot Key scripts to automate things
+[AutoHotKey](https://autohotkey.com/) scripts to automate things.
