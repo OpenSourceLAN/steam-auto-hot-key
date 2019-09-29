@@ -1,21 +1,24 @@
 
-; Sets the user's steam name ot the command line arguments of the script
+; Sets the user's steam name to the command line arguments of the script
+
+Run, Steam.exe, C:\Program Files (x86)\Steam
 
 WinActivate Steam
 WinWaitActive Steam
-Sleep 500
-Click 32, 13 ; file
-Sleep 500
-Send S{ENTER} ; settings
-Sleep 500
-WinActivate Settings
-Sleep 500
-Click 50, 78 ; Friends
-Sleep 500
-Click 311, 67, 3 ; Select all text in profile name
-Sleep 500
-Send %1% ; Write name (command line args)
-Sleep 500
-SEND +{TAB} ; Okay
-SEND +{TAB}
-SEND {ENTER}
+WinMove,Steam,, 100, 100, 1500, 800,,
+
+Sleep 2000
+Click 100, 20 ; friends drop down
+
+Sleep 50
+Send {DOWN}{DOWN}{ENTER} ; change name button
+
+Sleep 2000
+
+Click 300, 250
+
+Send {TAB}{Ctrl Down}a{Ctrl Up}{BackSpace} ; clear the profile anme field
+
+Send %1% ; write name (command line args)
+
+Send {Enter} ; save the change
