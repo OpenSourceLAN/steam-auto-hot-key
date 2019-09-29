@@ -8,6 +8,6 @@ WinMove,Epic Games Launcher,, 100, 100, 1500, 800,,
 
 Sleep 2000
 
-MouseMove, 1220, 20
+MouseMove, 150, 750
 Click
-Send {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Enter}
+Send {Tab}{Enter}

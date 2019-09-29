@@ -17,7 +17,7 @@ Sleep 2000
 MouseMove, 100, 100
 Click
 
-Send {Tab}
+Send {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}
 
 Send % uname
 
