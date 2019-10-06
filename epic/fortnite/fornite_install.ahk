@@ -10,29 +10,14 @@ Sleep 20000
 ;click library
 Click 60, 280
 
+;lazy safety delay
 Sleep 500
 
-;click install
+;
 Click 500, 190
 
+;lazy safety delay
 Sleep 5000
 
+;click install
 Click 840, 520
-
-
-
-
-; ;lazy safety delay
-; Sleep 2000
-
-; ;use defaults click install
-; MouseMove, 850, 500
-; Click
-
-; ;wait for the friends window to appear
-; WinWait,Add Friend
-; WinActivate,Add Friend
-
-; ;close the friends window
-; MouseMove, 1000, 20
-; Click
