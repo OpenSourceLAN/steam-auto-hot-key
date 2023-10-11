@@ -1,6 +1,6 @@
 ; logout the epic launcher
 
-Run, RiotClientServices.exe, C:\Riot Games\Riot Client
+Run, RiotClientServices.exe, C:\Riot Games\Riot Client (Esports)
 
 WinWait, Riot Client Main
 

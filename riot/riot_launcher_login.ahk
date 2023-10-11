@@ -1,13 +1,10 @@
 ; pass username and password as command line args
 ; e.g. riot_launcher_login.ahk username@gmail.com password1
 
-; uname = %1%
-; pword = %2%
+uname = %1%
+pword = %2%
 
-uname = Lynedymog
-pword = Knudsvej4180
-
-Run, RiotClientServices.exe, C:\Riot Games\Riot Client
+Run, RiotClientServices.exe, C:\Riot Games\Riot Client (Esports)
 
 WinWait, Riot Client Main
 
@@ -24,6 +21,6 @@ Send % uname
 
 Send {Tab}
 
-Send % pword
+SendRaw % pword
 
 Send {Enter}
